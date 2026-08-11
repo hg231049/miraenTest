@@ -3,4 +3,9 @@
 }
 @media (max-width:768px)  {
     .inner { padding: 0 20px; }
+    
+}
+@media (max-width:400px)  {
+    .top-bn .badge-box { font-size: 12px; }
+    .top-bn p { font-size: 15px; } 
 }

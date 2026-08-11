@@ -32,7 +32,7 @@ a { text-decoration: none; }
 .top-bn a > .flex-box { gap: 1.5278vw; }
 .top-bn .badge-box { position: relative; padding: 0.473% 1.05% 0.473% 2.1%; color:#FF8AAB; font-size: clamp(14px,1.2500vw,24px); font-weight: 700; border-radius: 40px; background: #FFFE8D; }
 .top-bn .badge-box .icon { position: absolute; top: 40%; left: -19.92%; transform: translateY(-50%); width: clamp(25px,4.9306vw,71px); }
-.top-bn p { color: #fff; font-size: clamp(18px,1.4583vw);}
+.top-bn p { color: #fff; font-size: clamp(18px,1.4583vw,28px);}
 .top-bn p .highlight { position: relative; padding:0 10px; color: #FFFE8D; z-index: 1;}
 .top-bn p .highlight::after { content: ""; position: absolute; bottom: -8px; left: 50%; max-width: 167px; height: 17px; width: 100%; background-size: 100%; background-repeat: no-repeat; background: url("/img/top-bn-line.png"); z-index: -1; transform: translateX(-50%); }
 
