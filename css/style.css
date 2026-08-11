@@ -1,45 +1,152 @@
- @font-face {
-    font-family: 'yg-jalnan';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    }
 @font-face {
-    font-family: 'NanumSquareRound';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
-    font-weight: normal;
-    font-display: swap;
+  font-family: "yg-jalnan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
-* { margin: 0; padding: 0; box-sizing: border-box;  font-family: "NanumSquareRound", sans-serif; }
-li { list-style-type: none; }
-img { width: 100%;  vertical-align: top; }
-a { text-decoration: none; }
-.ff-yg { font-family: 'yg-jalnan',sans-serif; }
-.ff-ns { font-family: "NanumSquareRound", sans-serif; }
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "NanumSquareRound", sans-serif;
+}
+li {
+  list-style-type: none;
+}
+img {
+  width: 100%;
+  vertical-align: top;
+}
+a {
+  text-decoration: none;
+}
+.ff-yg {
+  font-family: "yg-jalnan", sans-serif;
+}
+.ff-ns {
+  font-family: "NanumSquareRound", sans-serif;
+}
 :root {
-    --main-color:#5A371E;
+  --main-color: #5a371e;
 }
-
-.flex-box { display: flex; }
-.inner { position: relative; max-width: 1240px; width: 100%; margin: 0 auto; padding: 0 20px; }
+.pc-view {
+  display: block;
+}
+body .mo-view {
+  display: none;
+}
+body .flex-box {
+  display: flex;
+}
+.inner {
+  position: relative;
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
 /*------------------------
 헤더
 --------------------------*/
 /* 최상단 띠배너 */
-.top-bn { padding: 14px 0; background: #FF8AAB; }
-.top-bn .flex-box { align-items: center; justify-content: center; line-height: 1; }
-.top-bn a > .flex-box { gap: 1.5278vw; }
-.top-bn .badge-box { position: relative; padding: 0.473% 1.05% 0.473% 2.1%; color:#FF8AAB; font-size: clamp(14px,1.2500vw,24px); font-weight: 700; border-radius: 40px; background: #FFFE8D; }
-.top-bn .badge-box .icon { position: absolute; top: 40%; left: -19.92%; transform: translateY(-50%); width: clamp(25px,4.9306vw,71px); }
-.top-bn p { color: #fff; font-size: clamp(18px,1.4583vw,28px);}
-.top-bn p .highlight { position: relative; padding:0 10px; color: #FFFE8D; z-index: 1;}
-.top-bn p .highlight::after { content: ""; position: absolute; bottom: -8px; left: 50%; max-width: 167px; height: 17px; width: 100%; background-size: 100%; background-repeat: no-repeat; background: url("/img/top-bn-line.png"); z-index: -1; transform: translateX(-50%); }
+.top-bn {
+  padding: 14px 0;
+  background: #ff8aab;
+}
+.top-bn .flex-box {
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.top-bn a > .flex-box {
+  gap: 1.5278vw;
+}
+.top-bn .badge-box {
+  position: relative;
+  padding: 9px 20px 9px 40px;
+  color: #ff8aab;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 40px;
+  background: #fffe8d;
+}
+.top-bn .badge-box .icon {
+  position: absolute;
+  top: 40%;
+  left: -19.92%;
+  transform: translateY(-50%);
+  max-width: 71px;
+}
+.top-bn p {
+  color: #fff;
+  font-size: 28px;
+}
+.top-bn p .highlight {
+  position: relative;
+  padding: 0 10px;
+  color: #fffe8d;
+  z-index: 1;
+}
+.top-bn p .highlight::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  max-width: 167px;
+  height: 17px;
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background: url("./img/top-bn-line.png");
+  z-index: -1;
+  transform: translateX(-50%);
+}
 
 /* 헤더 */
-.header-main { position: absolute; width: 100%; top: 110px; left: 0; z-index: 1; }
-.header-main .flex-box { align-items: center; justify-content: space-between; }
-.header-main .logo { max-width: 64px; }
-.header-main .partner-logo { max-width: 96px; }
-.header-main .user-util { gap:24px; }
-.header-main .btn-login { display: flex; align-items: center; gap: 8px; padding: 10px 20px;  color: #000; font-size: 16px; ;font-weight: 800; letter-spacing: -0.32px; border-radius: 100px; border: 2px solid #000; }
+.header-main {
+  position: absolute;
+  width: 100%;
+  top: 110px;
+  left: 0;
+  z-index: 1;
+}
+.header-main .flex-box {
+  align-items: center;
+  justify-content: space-between;
+}
+.header-main .logo {
+  max-width: 64px;
+}
+.header-main .partner-logo {
+  max-width: 96px;
+}
+.header-main .user-util {
+  gap: 24px;
+}
+.header-main .btn-login {
+  padding: 10px 20px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.32px;
+  border-radius: 100px;
+  border: 2px solid #000;
+}
+
+/* 하단 고정 메뉴 */
+.bottom-fixed-bn {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+}

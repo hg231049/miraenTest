@@ -2,19 +2,150 @@
 메인
 ------------------*/
 /* 메인비주얼 */
-.main-visual { position: relative; }
-.visual-title { position: absolute; left: 50%; top: 4.1%; transform: translateX(-50%); width: 37.8125vw; }
-.visual-ch { position: absolute; left: 36.6%; bottom: -4%; width: 31.9448vw; transform: rotate(1deg); }
+.main-visual {
+  position: relative;
+}
+.visual-title {
+  position: absolute;
+  left: 50%;
+  top: 4.1%;
+  transform: translateX(-50%);
+  width: 37.8125vw;
+}
+.visual-ch {
+  position: absolute;
+  left: 36.6%;
+  bottom: -4%;
+  width: 31.9448vw;
+  transform: rotate(1deg);
+}
 
-.content-box {  position:relative;  width: 100%; margin: 0 auto; }
+.content-box {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
 /* 종이 안내 */
-.main-box2 { background: #B0EEAF; }
-.paper-info { position: relative; margin-top: -16.667%; text-align: center; }
-.paper-info .info-box { position: absolute; top: 47%; left: 0; width: 100%; }
-.paper-info .info-box > ul { justify-content: space-evenly; padding: 0 5% 0 0%;}
-.paper-info .info-box > ul li { color: #333; letter-spacing: -0.03rem; }
-.paper-info .info-box > ul li:nth-child(2) { margin-top: -10px; }
-.paper-info .info-box > ul li:nth-child(3) { margin-top: -25px; }
-.paper-info .info-box > ul li h2 { font-size: clamp(16px, 2.6667vw, 32px); font-weight: 900; }
-.paper-info .info-box > ul li p { font-size: clamp(12px, 1.8333vw, 22px); }
-.paper-info .notice { margin-top: 4px; color: #333; font-size: clamp(10px, 1.8333vw, 20px); line-height: 150%; letter-spacing: -0.4px; }
+.main-box2 {
+  background: #b0eeaf;
+}
+.paper-info {
+  position: relative;
+  max-width: 62.5vw;
+  margin: -10.499% auto 0;
+  text-align: center;
+}
+.paper-info .info-box {
+  position: absolute;
+  top: 47%;
+  left: 0;
+  width: 100%;
+}
+.paper-info .info-box > ul {
+  justify-content: space-evenly;
+  padding: 0 5% 0 0%;
+}
+.paper-info .info-box > ul li {
+  color: #333;
+  letter-spacing: -0.03rem;
+}
+.paper-info .info-box > ul li:nth-child(2) {
+  margin-top: -10px;
+}
+.paper-info .info-box > ul li:nth-child(3) {
+  margin-top: -25px;
+}
+.paper-info .info-box > ul li h2 {
+  font-size: 1.6667vw;
+  font-weight: 900;
+}
+.paper-info .info-box > ul li p {
+  font-size: 1.1458vw;
+}
+.main-box2 .notice {
+  margin-top: 4px;
+  color: #333;
+  text-align: center;
+  font-size: clamp(10px, 1.8333vw, 20px);
+  line-height: 150%;
+  letter-spacing: -0.4px;
+}
+
+.main-box3 {
+  padding: 6.0938vw 0 6.6667vw;
+  background: #b0eeaf;
+}
+.main-box3 .main-title {
+  text-align: center;
+}
+.main-box3 .main-title h2 {
+  position: relative;
+  display: inline-flex;
+  padding: 12px 32px 7px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  color: #fff;
+  font-size: clamp(16px, 2.1875vw, 42px);
+  line-height: 150%;
+  letter-spacing: -1.26px;
+  border-radius: 50px;
+  background: #579a55;
+}
+.main-box3 .main-title h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 15px;
+  height: 11px;
+  background-color: #579a55;
+  border-top: 1px solid #579a55;
+  border-right: 1px solid #579a55;
+}
+.main-box3 .main-title h3 {
+  max-width: 1116px;
+  margin: 0.8854vw auto 1.5625vw;
+}
+.main-box3 .main-title p {
+  color: #000;
+  font-size: clamp(14px, 1.5625vw, 30px);
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.9px;
+}
+.paper-list {
+  position: relative;
+  width: 100%;
+  height: 35vw;
+  max-height: 564px;
+  min-height: 400px;
+  background: url("/img/newspaper-bg.png") no-repeat;
+  background-position-x: center;
+}
+.paper-list li {
+  position: absolute;
+}
+.paper-list li:first-child {
+  aspect-ratio: 277 / 116;
+  top: 12%;
+  right: 7.834%;
+  max-width: 514.785px;
+  max-height: 215.58px;
+}
+.paper-list li:nth-child(2) {
+  top: 37%;
+  left: 8%;
+  max-width: 545.971px;
+  max-height: 211.467px;
+  aspect-ratio: 142/55;
+}
+.paper-list li:last-child {
+  right: 9.834%;
+  bottom: 0;
+  max-width: 516.557px;
+  max-height: 200.075px;
+  aspect-ratio: 142/55;
+}

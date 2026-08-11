@@ -1,11 +1,96 @@
-@media (max-width:1440px)  {
-    
+@media (max-width: 1240px) {
 }
-@media (max-width:768px)  {
-    .inner { padding: 0 20px; }
-    
+@media (max-width: 991px) {
+  .inner {
+    padding: 0 20px;
+  }
+
+  /* 헤더 */
+  .top-bn .badge-box {
+    padding: 5px 10px 5px 25px;
+    font-size: 14px;
+  }
+  .top-bn p {
+    font-size: 18px;
+  }
+  .top-bn .badge-box .icon {
+    width: 60%;
+  }
+  .header-main {
+    top: 80px;
+  }
+
+  .header-main .logo {
+    max-width: 50px;
+  }
+
+  /* 메인 */
+  .paper-info .info-box > ul li:nth-child(2) {
+    margin-top: -5px;
+  }
+  .paper-info .info-box > ul li:nth-child(3) {
+    margin-top: -8px;
+  }
 }
-@media (max-width:400px)  {
-    .top-bn .badge-box { font-size: 12px; }
-    .top-bn p { font-size: 15px; } 
+@media (max-width: 768px) {
+  body .pc-view {
+    display: none;
+  }
+  body .mo-view {
+    display: block;
+  }
+  .header-main .btn-login {
+    padding: 0;
+    border: 0;
+  }
+  .header-main .btn-login span {
+    font-size: 30px;
+    vertical-align: middle;
+  }
+  .header-main .user-util {
+    gap: 15px;
+  }
+
+  /* 메인 */
+  .main-box3 .main-title h2 {
+    padding: 6px 20px;
+  }
+  .main-box3 .main-title h2::before {
+    width: 9px;
+    height: 5px;
+  }
+}
+@media (max-width: 450px) {
+  .top-bn .badge-box {
+    padding: 4px 5px 4px 15px;
+    font-size: 11px;
+  }
+  .top-bn p {
+    font-size: 15px;
+  }
+  .top-bn .badge-box .icon {
+    width: 50%;
+  }
+  .header-main {
+    top: 60px;
+  }
+  .header-main .logo {
+    max-width: 40px;
+  }
+  .header-main .partner-logo {
+    max-width: 60px;
+  }
+  .header-main .user-util {
+    gap: 10px;
+  }
+  .header-main .btn-login span {
+    font-size: 24px;
+  }
+  /* 메인 */
+  .paper-info .info-box > ul li:nth-child(2) {
+    margin-top: 0;
+  }
+  .paper-info .info-box > ul li:nth-child(3) {
+    margin-top: -5px;
+  }
 }
