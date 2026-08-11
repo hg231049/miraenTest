@@ -1,0 +1,6 @@
+/*----------------
+메인
+------------------*/
+/* 메인비주얼 */
+.main-visual { position: relative; }
+.visual-ch { position: absolute; left: 36%; bottom: 11px; max-width: 613.337px; max-height: 559.951px; transform: rotate(1deg); }
