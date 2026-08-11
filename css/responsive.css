@@ -1,4 +1,15 @@
 @media (max-width: 1240px) {
+  .paper-info {
+    max-width: 100%;
+    padding: 0 20px;
+    margin: -13.499% auto 0;
+  }
+  .paper-info .info-box > ul li h2 {
+    font-size: 28px;
+  }
+  .paper-info .info-box > ul li p {
+    font-size: 18px;
+  }
 }
 @media (max-width: 991px) {
   .inner {
@@ -25,12 +36,6 @@
   }
 
   /* 메인 */
-  .paper-info .info-box > ul li:nth-child(2) {
-    margin-top: -5px;
-  }
-  .paper-info .info-box > ul li:nth-child(3) {
-    margin-top: -8px;
-  }
 }
 @media (max-width: 768px) {
   body .pc-view {
@@ -52,12 +57,23 @@
   }
 
   /* 메인 */
+  .paper-info .info-box > ul li:nth-child(3) {
+    margin-top: -15px;
+  }
+  .paper-info .info-box > ul li h2 {
+    font-size: 18px;
+  }
+  .paper-info .info-box > ul li p {
+    font-size: 12px;
+  }
   .main-box3 .main-title h2 {
-    padding: 6px 20px;
+    padding: 3px 10px;
+    font-size: 12px;
   }
   .main-box3 .main-title h2::before {
-    width: 9px;
-    height: 5px;
+    bottom: -4%;
+    width: 7px;
+    height: 3px;
   }
   .main-box4 {
     padding: 35px 0 50px;
@@ -99,11 +115,20 @@
     font-size: 24px;
   }
   /* 메인 */
+  .paper-info .info-box {
+    top: 38%;
+  }
   .paper-info .info-box > ul li:nth-child(2) {
     margin-top: 0;
   }
   .paper-info .info-box > ul li:nth-child(3) {
     margin-top: -5px;
+  }
+  .paper-info .info-box > ul li h2 {
+    font-size: 14px;
+  }
+  .paper-info .info-box > ul li p {
+    font-size: 10px;
   }
   .main-box4 .main-title p {
     font-size: 15px;
