@@ -59,6 +59,18 @@
     width: 9px;
     height: 5px;
   }
+  .main-box4 {
+    padding: 35px 0 50px;
+  }
+  .main-box4 .main-title h2 {
+    margin-bottom: 12px;
+  }
+  .main-box4 .main-title p {
+    font-size: 20px;
+  }
+  .main-box4 .main-title span {
+    max-width: 100px;
+  }
 }
 @media (max-width: 450px) {
   .top-bn .badge-box {
@@ -92,5 +104,8 @@
   }
   .paper-info .info-box > ul li:nth-child(3) {
     margin-top: -5px;
+  }
+  .main-box4 .main-title p {
+    font-size: 15px;
   }
 }
