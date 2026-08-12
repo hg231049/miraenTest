@@ -28,8 +28,8 @@ $(document).ready(function(){
             }
 
             if (refTop <= scrollPos && refBottom > scrollPos) {
-            tabButton.removeClass("selected");
-            currLink.addClass("selected");
+            tabButton.parents("li").removeClass("selected");
+            currLink.parents("li").addClass("selected");
             return false;
             }
         });
@@ -61,8 +61,8 @@ $(document).ready(function(){
         if (clickScrollTimer) clearTimeout(clickScrollTimer);
         clickScrollTimer = setTimeout(cancelClickScroll, CLICK_SCROLL_TIMEOUT);
 
-        tabButton.removeClass("selected");
-        $this.addClass("selected");
+        tabButton.parents("li").removeClass("selected");
+        $this.parents("li").addClass("selected");
 
         // ★ 다른 곳에서 걸어둔 애니메이션 큐/진행 중 스크롤 지우기
         $('html, body').stop(true, false).animate(
@@ -102,20 +102,22 @@ $(document).ready(function(){
             bulletClass: 'tab-bullet',
             bulletActiveClass: 'active',
             renderBullet: function (index, className) {
-                // 원본 .tab-template li 안의 HTML 구조를 그대로 복사하여 탭 버튼 생성
-                var bulletHtml = $tabMenu.eq(index).html();
-                return "<li class='" + className + "'>" + bulletHtml + '</li>';
+                    // 원본 .tab-template li 안의 HTML 구조를 그대로 복사하여 탭 버튼 생성
+                    var bulletHtml = $tabMenu.eq(index).html();
+                    return "<li class='" + className + "'>" + bulletHtml + '</li>';
+                },
             },
+            navigation: {
+                nextEl: $this.find('.subjects-next')[0], // 다음 버튼 요소
+                prevEl: $this.find('.subjects-prev')[0], // 이전 버튼 요소
             },
             grabCursor: true,
-            loop:true,
             autoplay: {
             delay: 3000,
             disableOnInteraction: false,
             },
         });
 
-        // 인스턴스 저장
         $this.data('swiper', swiper);
         }
     });

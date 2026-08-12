@@ -57,6 +57,19 @@ body .flex-box {
 /*------------------------
 헤더
 --------------------------*/
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-50%); 
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1); 
+  }
+  50% {
+    transform: translateY(calc(-50% + 5px)); 
+  }
+  75% {
+    transform: translateY( calc(-50% - 4px));
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+}
 /* 최상단 띠배너 */
 .top-bn {
   padding: 14px 0;
@@ -85,6 +98,7 @@ body .flex-box {
   left: -19.92%;
   transform: translateY(-50%);
   max-width: 71px;
+  animation: bounce 3.2s ease-in-out infinite;
 }
 .top-bn p {
   color: #fff;
@@ -149,4 +163,11 @@ body .flex-box {
   left: 50%;
   width: 100%;
   transform: translateX(-50%);
+  z-index: 99;
 }
+footer {  
+  padding: 100px 0;
+  background: #000;
+}
+footer nav ul { display: flex; flex-wrap: wrap; gap: 15px; align-items: center;}
+footer nav ul a { color: #fff; }
