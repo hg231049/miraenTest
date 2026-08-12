@@ -75,7 +75,7 @@
   .tab-menu li:first-child,
   .tab-menu li.top-btn { border-radius:0; }
   .tab-menu ul { display: flex; width: 100%;  }
-    .tab-menu li { flex: 1; }
+    .tab-menu li { width:20%; }
   .tab-menu::before { display: none; }
   .tab-menu a,
    .tab-menu li.top-btn {  padding: 10px; font-size: 12px; }
