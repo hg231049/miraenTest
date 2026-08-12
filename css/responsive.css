@@ -5,6 +5,7 @@
     margin: -13.499% auto 0;
   }
 
+
 }
 @media (max-width: 991px) {
   .inner {
@@ -31,7 +32,16 @@
   }
 
   /* 메인 */
+     .main-box5 {  padding: 10.0908vw 0 14.1271vw }
+   .main-box5 .tab-line {   }
+  .main-box5 .main-title { gap: 1.2109vw; margin-bottom: 6.0545vw; }
+  .main-box5 .main-title span svg { width: 11.5035vw;  height: 5.5499vw; }
+    .main-box5 .main-title h2 { font-size: 5.6509vw; }
+  .main-box5 .main-title {     margin-bottom: 5.0000vw; }
+  .subjects-tab .swiper-pagination { width: 80%; margin: 0 auto 1.6667vw; }
+
   .main-box6 .btn { bottom:9.535%; width: 100%; padding: 0 20px; }
+
 }
 @media (max-width: 768px) {
   body .pc-view {
@@ -87,6 +97,7 @@
   .main-box4 .main-title span {
     max-width: 100px;
   }
+  .main-box5 .tab-line {    }
   .main-box7 .main-title h2 span { max-width: 21px; }
 .main-box7 { padding: 6.9767vw 0 9.3023vw; }
 .main-box7 .main-title h2 {  gap: 1.1628vw; padding-bottom: 4.6512vw; font-size: 4.6512vw; letter-spacing: -0.0930vw; }
