@@ -47,7 +47,6 @@ body .flex-box {
   display: flex;
 }
 .inner {
-
   max-width: 1240px;
   width: 100%;
   margin: 0 auto;
@@ -58,15 +57,16 @@ body .flex-box {
 헤더
 --------------------------*/
 @keyframes bounce {
-  0%, 100% {
-    transform: translateY(-50%); 
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1); 
+  0%,
+  100% {
+    transform: translateY(-50%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
   50% {
-    transform: translateY(calc(-50% + 5px)); 
+    transform: translateY(calc(-50% + 5px));
   }
   75% {
-    transform: translateY( calc(-50% - 4px));
+    transform: translateY(calc(-50% - 4px));
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
 }
@@ -165,9 +165,16 @@ body .flex-box {
   transform: translateX(-50%);
   z-index: 99;
 }
-footer {  
+footer {
   padding: 100px 0;
   background: #000;
 }
-footer nav ul { display: flex; flex-wrap: wrap; gap: 15px; align-items: center;}
-footer nav ul a { color: #fff; }
+footer nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+footer nav ul a {
+  color: #fff;
+}
