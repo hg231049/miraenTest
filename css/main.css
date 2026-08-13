@@ -164,7 +164,7 @@
   gap: 10px;
   align-self: stretch;
   color: #fff;
-  font-size: clamp(16px, 2.1875vw, 42px);
+  font-size: clamp(12px, 2.1875vw, 42px);
   line-height: 150%;
   letter-spacing: -1.26px;
   border-radius: 50px;

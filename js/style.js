@@ -50,13 +50,28 @@ $(document).ready(function(){
 
     onTabScroll();
 
- /* 상단이동 */
-  $(".top-btn").click(function(e){
-    $("html, body").animate({ scrollTop : 0 }, 600);
-    //e.preventDefault();
-  });
-  /* 과목 탭 슬라이드 진열 */
-  $('.subjects-tab').each(function () {
+    /* 상단이동 */
+    $(".top-btn").click(function(e){
+        $("html, body").animate({ scrollTop : 0 }, 600);
+        //e.preventDefault();
+    });
+
+    /* 폼 입력 글자 수 카운트 */
+    const textBox = document.querySelector(".survey-box .form-item .text-wrap textarea");
+    const textCnt = document.querySelector(".survey-box .form-item .text-wrap .count span");
+    textBox.addEventListener("input",()=>{
+        //console.log(textBox.value.length);
+        textCnt.textContent = textBox.value.length;
+    });
+
+    /* 폼 입력 버튼 알럿 */
+    const submitBtn = document.querySelector(".submit-btn");
+    submitBtn.addEventListener("click",()=>{
+        window.confirm("지원이 완료되었습니다!");
+    });
+
+    /* 과목 탭 슬라이드 진열 */
+    $('.subjects-tab').each(function () {
         var $this = $(this);
         var $tabMenu = $this.find('.tab-template').children('li');
         var swiperContainer = $this.find('.tab-contents')[0];
@@ -65,7 +80,12 @@ $(document).ready(function(){
         var swiper = $this.data('swiper');
 
         if (!swiper && swiperContainer) {
+            // 랜덤
+            var slideCnt = $tabMenu.length;
+            var randomIdx = slideCnt > 0 ? Math.floor(Math.random() * slideCnt) : 0;
+
         swiper = new Swiper(swiperContainer, {
+            initialSlide: randomIdx,
             spaceBetween: 0,
             slidesPerView: 1,
             pagination: {
@@ -74,14 +94,13 @@ $(document).ready(function(){
             bulletClass: 'tab-bullet',
             bulletActiveClass: 'active',
             renderBullet: function (index, className) {
-                    // 원본 .tab-template li 안의 HTML 구조를 그대로 복사하여 탭 버튼 생성
                     var bulletHtml = $tabMenu.eq(index).html();
                     return "<li class='" + className + "'>" + bulletHtml + '</li>';
                 },
             },
             navigation: {
-                nextEl: $this.find('.subjects-next')[0], // 다음 버튼 요소
-                prevEl: $this.find('.subjects-prev')[0], // 이전 버튼 요소
+                nextEl: $this.find('.subjects-next')[0], 
+                prevEl: $this.find('.subjects-prev')[0], 
             },
             grabCursor: true,
             autoplay: {
